@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alex Rivera | Backend Engineer &amp; QA Specialist</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .mesh-gradient {
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(19, 127, 236, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(19, 127, 236, 0.1) 0px, transparent 50%),
+                radial-gradient(at 50% 100%, rgba(19, 127, 236, 0.05) 0px, transparent 50%);
+        }
+        .grid-pattern {
+            background-size: 40px 40px;
+            background-image: radial-gradient(circle, rgba(19, 127, 236, 0.1) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 selection:bg-primary/30">
+<!-- Header / Navigation -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2 group cursor-pointer">
+<div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl group-hover:rotate-6 transition-transform">
+                    A
+                </div>
+<span class="text-xl font-bold tracking-tight dark:text-white">Alex Rivera</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#skills">Skills</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#projects">Projects</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#experience">Experience</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+</span>
+<span class="text-xs font-medium text-emerald-600 dark:text-emerald-400">Available for work</span>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-icons">menu</span>
+</button>
+</div>
+</nav>
+</header>
+<!-- Main Hero Section -->
+<main class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<!-- Background Elements -->
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 mesh-gradient"></div>
+<div class="absolute inset-0 grid-pattern opacity-40"></div>
+<!-- Decorative "Code" Elements -->
+<div class="absolute top-1/4 -right-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="absolute bottom-1/4 -left-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+</div>
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10 w-full">
+<!-- Left Content Area -->
+<div class="lg:col-span-7 flex flex-col justify-center space-y-8">
+<div class="space-y-4">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/5 border border-primary/10 text-primary text-sm font-semibold tracking-wide uppercase">
+<span class="material-icons text-base">terminal</span>
+                        Backend Engineer &amp; QA Specialist
+                    </div>
+<h1 class="text-6xl lg:text-8xl font-black tracking-tight leading-none text-slate-900 dark:text-white">
+                        Alex <span class="text-primary">Rivera</span>
+</h1>
+<p class="text-xl lg:text-2xl text-slate-600 dark:text-slate-400 max-w-2xl font-light leading-relaxed">
+                        Building <span class="text-slate-900 dark:text-white font-medium">reliable systems</span> with clean, testable code. Specializing in high-performance architectures and automated quality assurance.
+                    </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-4">
+<a class="group w-full sm:w-auto px-8 py-4 bg-primary text-white font-bold rounded-lg shadow-lg shadow-primary/30 hover:shadow-primary/50 hover:translate-y-[-2px] transition-all flex items-center justify-center gap-2" href="#projects">
+                        View Projects
+                        <span class="material-icons group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto px-8 py-4 border-2 border-primary/30 text-primary font-bold rounded-lg hover:bg-primary/5 transition-all text-center" href="#contact">
+                        Contact Me
+                    </a>
+</div>
+<!-- Tech Stack Pills -->
+<div class="pt-8 flex flex-wrap items-center gap-3">
+<span class="text-sm font-semibold text-slate-500 uppercase tracking-widest mr-4">Expertise:</span>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-background-light dark:bg-slate-800 border border-primary/10 rounded-md text-xs font-mono">Node.js</span>
+<span class="px-3 py-1 bg-background-light dark:bg-slate-800 border border-primary/10 rounded-md text-xs font-mono">Go</span>
+<span class="px-3 py-1 bg-background-light dark:bg-slate-800 border border-primary/10 rounded-md text-xs font-mono">PostgreSQL</span>
+<span class="px-3 py-1 bg-background-light dark:bg-slate-800 border border-primary/10 rounded-md text-xs font-mono">Kubernetes</span>
+<span class="px-3 py-1 bg-background-light dark:bg-slate-800 border border-primary/10 rounded-md text-xs font-mono">Selenium</span>
+</div>
+</div>
+</div>
+<!-- Right Visual Area (Abstract Hero Image/Graphic) -->
+<div class="lg:col-span-5 hidden lg:flex items-center justify-center">
+<div class="relative w-full aspect-square">
+<!-- Geometric Mesh Mockup -->
+<div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent rounded-3xl overflow-hidden border border-primary/20">
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-3/4 h-3/4 opacity-80 rotate-12 transition-transform duration-1000">
+<img alt="Abstract Cybersecurity Network" class="w-full h-full object-cover rounded-2xl mix-blend-overlay grayscale hover:grayscale-0 transition-all duration-500 shadow-2xl" data-alt="Abstract glowing circuit board and network lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfOSeyMD-6n7ZFONFUAXE-pa1bLnbyDJ2FfQLXlQHAuDNSoVagmMnTf_mb5_6hrlOEv_LSeuZJw69GEmnGS5bZjBz6AJ3EZAbWcUDUavYz_KpYvUXz61YBygH9S63beMx-RUKmcoHt7XX6gZCOY6uLZfjDUxs2TlhtuzZL-h5e1B37R7k-TwnqPFi2B3k9ZVXrf16inUwliUST6MuvRlRPOhffuV3vear6Izm00C0eq6-ZGJktZnJghRALRNMW9WDUQFFkfO-jIps"/>
+</div>
+</div>
+<!-- Floating Code Snippet Card -->
+<div class="absolute bottom-10 right-0 transform translate-x-1/4 bg-background-dark/90 border border-primary/30 p-4 rounded-xl shadow-2xl backdrop-blur-md max-w-[280px]">
+<div class="flex gap-1.5 mb-3">
+<div class="w-2.5 h-2.5 rounded-full bg-red-500/50"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-amber-500/50"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-500/50"></div>
+</div>
+<div class="space-y-2 font-mono text-[10px] text-primary/80">
+<p><span class="text-pink-500">const</span> <span class="text-emerald-400">deploy</span> = () =&gt; {</p>
+<p class="pl-4"><span class="text-blue-400">verify</span>(codebase);</p>
+<p class="pl-4"><span class="text-blue-400">optimize</span>(infrastructure);</p>
+<p class="pl-4 text-slate-500">// scalability: 100%</p>
+<p><span class="text-slate-400">}</span></p>
+</div>
+</div>
+<!-- Floating Badge -->
+<div class="absolute top-10 left-0 transform -translate-x-1/4 bg-primary p-3 rounded-xl shadow-xl flex items-center gap-3">
+<div class="w-10 h-10 bg-white/20 rounded flex items-center justify-center">
+<span class="material-icons text-white">verified</span>
+</div>
+<div class="text-white">
+<p class="text-[10px] font-bold uppercase tracking-tighter opacity-80">System Reliability</p>
+<p class="text-lg font-black">99.9%</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
+<span class="text-[10px] uppercase tracking-[0.2em] font-bold">Scroll Down</span>
+<div class="w-[1px] h-12 bg-gradient-to-b from-primary to-transparent"></div>
+</div>
+</main>
+<!-- Social Sidebar (Desktop) -->
+<aside class="hidden xl:flex fixed left-10 bottom-0 flex-col items-center gap-6 after:content-[''] after:w-[1px] after:h-24 after:bg-primary/20">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><img alt="GitHub" class="w-5 h-5 opacity-70 hover:opacity-100" data-alt="Github brand icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV-xu1d1AJsDTKGOr77fe_JesUay0b_ytxyFy5tAojxXAtpynRSzGCYEX4_B9kWqOLgAmCkEV3PCjw0FUEVx3l_WYyK15Z09wJMz81MzW2vXydq3q6ZEoe3FZ9nI4dyED5tP11TTaT4yemuWBlr7ZunGAB_9Fm0j1F52sMGfpBisDtFIL-rB5SeEwpH-HRyMd7gzx49_J1T3BrK1Q2_H8YvP7Yxh0Bo2er7kpT_lv4JBSJlowUEZnz0CHF6gISzVEF0yNgkpFFaY8"/></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><img alt="LinkedIn" class="w-5 h-5 opacity-70 hover:opacity-100" data-alt="LinkedIn brand icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkn0Aj_IHc7WGucL5VpfyTMknzASyC6CKytnIoHU8b91ca4w6idyDmBfAbjLPBDTA7WV6FSUuv_mcGC5Gd5I31MfOlJRt4i0RdLiTiXeID8Jwt2TeFYh59T_Wviyi5tMkA3W8gf-4iJIjRe2ZRBtP7V2xDF3jgqH8lk9qS4No0H-r40cqZLdTJODn3wdxxeTkYiztyzaamKqG3R1iNfi2JyADlnY5QnqPMfDwb2T-F3H3ODm0BFQPC8JccG-79WpJd49D3qBWiUTU"/></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><img alt="Twitter" class="w-5 h-5 opacity-70 hover:opacity-100" data-alt="Twitter brand icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSnMum-TQuevmqISVHgApTQiGXLaLzBEwkTTz6TVgPs3F7ShPuPTFyOVvAaBqSNj470XxWyM9JwyPOBKfbmy_RR3p1Sl2wL4UPuAhnXc2VIEH-OmlWSmt3WN8DcnXfe7akTCRlRbnycC6Ao0Y9ETJzmn17dmnq_4dsnJ54jlcvJjMZuPbIW_p3AguBGjR_fy7s0V6UfvhieiLd4YRFHCb-gAaYZG4KuEdk44N9mHT_rs7ixhkpwq6A1vDiQw7Z9Jelw3yNW4W455g"/></a>
+</aside>
+</body></html>
