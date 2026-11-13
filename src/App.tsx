@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { INDEX_SECTIONS, PROFILE, ProjectItem } from './data/portfolioData';
 import { TopBar } from './components/TopBar';
@@ -15,8 +15,6 @@ export const App: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string>('work');
   const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null);
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState<boolean>(false);
-
-  const editorContentRef = useRef<HTMLDivElement | null>(null);
 
   // Scroll-spy for RightSidebar Index
   useEffect(() => {
@@ -109,9 +107,9 @@ export const App: React.FC = () => {
 
         {/* Center Editor Canvas + Continuous Line Numbers */}
         <main className="flex-1 flex min-w-0 bg-[#171717]">
-          <LineGutter contentRef={editorContentRef} />
+          <LineGutter />
 
-          <div ref={editorContentRef} className="flex-1 min-w-0">
+          <div className="flex-1 min-w-0 self-start">
             {activeTab === 'info' ? (
               <InfoTabView
                 onSelectProject={setSelectedProject}
