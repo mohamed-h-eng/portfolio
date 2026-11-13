@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+
+  html {
+    font-family: var(--font-mono);
+    background-color: #161616;
+    color: #e8e8e8;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background-color: #161616;
+    color: #e8e8e8;
+    overflow-x: hidden;
+  }
+}
+
+.font-display {
+  font-family: var(--font-sans);
+}
+
+.font-mono-code {
+  font-family: var(--font-mono);
+}
+
+/* Signature muted olive inline text highlight from reference Image 2 */
+.code-highlight {
+  background-color: rgba(132, 148, 70, 0.26);
+  color: #eef3d2;
+  padding: 1px 5px;
+  border-radius: 2px;
+}
+
+/* Subtle diagonal hatch pattern used in SINCE 2023 & KEEP GOING banners */
+.diagonal-hatch {
+  background-image: repeating-linear-gradient(
+    -62deg,
+    #252525 0px,
+    #252525 3px,
+    transparent 3px,
+    transparent 13px
+  );
+}
+
+/* Custom thin dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #131313;
+}
+::-webkit-scrollbar-thumb {
+  background: #2c2c2c;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f3f;
+}
